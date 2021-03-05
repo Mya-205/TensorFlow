@@ -1,0 +1,8 @@
+import tensorflow as tf
+
+dataset = tf.data.Dataset.from_tensor_slices([4, 6, 7, 9, 3, 2, 1, 10, 5, 8])
+dataset
+
+
+for x in dataset:
+  print(x.numpy())
